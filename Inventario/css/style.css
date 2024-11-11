@@ -1,0 +1,94 @@
+/* cambios generales a la pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #78c9ff;
+    margin: 0;
+    padding: 20px;
+}
+
+/*contenedro principal de la web*/
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* titulos */
+h1 { 
+    text-align: center;
+    color: #333;
+}
+/* boton */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #0066CC;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+button.delete {
+    background-color: #e74c3c;
+}
+
+button.edit {
+    background-color: #182472;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3333FF ;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #78c9ff;
+}
+/* CSS para tarjeta */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

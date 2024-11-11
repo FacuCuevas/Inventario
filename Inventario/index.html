@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <h1>Inventario de Productos</h1>
+
+    <!-- Barra de búsqueda -->
+<div>
+    <input type="text" id="searchInput" placeholder="Buscar por nombre..." oninput="searchProduct()">
+    <button onclick="searchProduct()">Buscar</button>  
+</div>
+
+<div class="product-card">
+    <h3>Producto: Coca Cola</h3>
+    <p>Precio: $50</p>
+    <p>Cantidad: 20</p>
+</div>
+
+
+    <!-- agregar productos -->
+    <form id="productForm">
+        <input type="text" id="productName" placeholder="Nombre del producto" required>
+        <input type="number" id="productPrice" placeholder="Precio" required>
+        <input type="number" id="productQuantity" placeholder="Cantidad" required>
+        <button type="submit"><i class="fas fa-plus"></i>Agregar Producto</button>
+    </form>
+
+    <!-- tabla para mostrar productos -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+            <!-- visual de productos -->
+        </tbody>
+    </table>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
